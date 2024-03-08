@@ -1,5 +1,7 @@
 package br.com.FinTech.model;
 
+import java.util.List;
+
 import br.com.FinTech.Conta;
 
 public class Cliente implements Conta {
@@ -7,6 +9,7 @@ public class Cliente implements Conta {
 	String nome;
 	String email;
 	String cpf;
+	List<Conta> contas; // Lista de contas associadas ao cliente
 	
 	public String getNome() {
 		return nome;
